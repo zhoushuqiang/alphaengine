@@ -1,0 +1,14 @@
+//.3l file for load model: |CreatedByPlaneT| in OpenGL (Positions, Texels).
+vx30
+1,1,1,
+1,0,
+-1,1,1,
+0,0,
+-1,-1,1,
+0,1,
+1,1,1,
+1,0,
+-1,-1,1,
+0,1,
+1,-1,1,
+1,1,

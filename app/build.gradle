@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.stety.alphaengine"
+        minSdkVersion 10
+        targetSdkVersion 21
+
+        ndk {
+            moduleName "engine"
+            cFlags "-DKTX_OPENGL_ES2=1 -DSUPPORT_SOFTWARE_ETC_UNPACK=0"
+            ldLibs "GLESv2 -llog -landroid"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
